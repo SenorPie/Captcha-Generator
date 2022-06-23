@@ -54,7 +54,7 @@ class CaptchaGenerator:
 
         # Draw 8 lines in random positions throughout the image
         for i in range(8):
-            draw.line((random.randrange(0, 100), random.randrange(0, 100)) + (random.randrange(0, 100), random.randrange(0, 100)), fill=128)
+            draw.line((random.randrange(0, 100), random.randrange(0, 100)) + (random.randrange(0, 100), random.randrange(0, 100)), fill=self.get_random_color())
         
 
         # Add filter
